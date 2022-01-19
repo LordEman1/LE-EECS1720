@@ -1,0 +1,15 @@
+{
+    "name": "Project 1",
+    "description": "",
+    "version": "",
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [
+        {
+        "css": ["Project 1.css"],
+        "js": ["Project 1.js"]
+    }
+]
+}
