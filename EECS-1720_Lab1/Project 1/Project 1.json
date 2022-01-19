@@ -1,15 +1,18 @@
 {
     "name": "Project 1",
     "description": "",
-    "version": "",
+    "version": "1,0",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "<all_urls>",
+        "tabs"
     ],
 
     "content_scripts": [
         {
         "css": ["Project 1.css"],
-        "js": ["Project 1.js"]
+        "js": ["Project 1.js"],
+        "html": ["Project 1.html"]
     }
-]
+    ]
 }
