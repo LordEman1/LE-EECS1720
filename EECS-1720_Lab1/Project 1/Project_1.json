@@ -1,0 +1,22 @@
+{
+    "manifest_version": 1,
+
+    "name": "Project 1",
+    "description": "project 1",
+    "version": "1,0",
+    "permissions": [
+        "activeTab",
+        "<all_urls>",
+        "tabs"
+    ],
+
+    "browser_acton": {
+        "defalt_popup": "Project_1.html"
+    },
+    "content_scripts": [
+        {
+        "css": ["Project_1.css"],
+        "js": ["Project_1.js"]
+    }
+    ]
+}
