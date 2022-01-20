@@ -10,7 +10,7 @@
         "tabs"
     ],
 
-    "browser_acton": {
-        "defalt_popup": "Project_1.html"
+    "browser_action": {
+        "default_popup": "Project_1.html"
     }
 }
