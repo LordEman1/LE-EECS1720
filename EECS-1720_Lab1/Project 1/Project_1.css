@@ -1,15 +1,31 @@
 h1{
     font-weight: bold;
-    color: darkslategrey;
+    color: rgb(255, 255, 255);
+    background-color:rgb(75, 73, 211);
     text-decoration: underline; 
  }
  button{
     font-weight: bold;
-    color: darkslategrey;
+    color: rgb(255, 255, 255);
+    background-color:rgb(75, 73, 211);
     /*text-decoration: underline; */
  }
 input{
     font-weight: bold;
-    color: darkslategrey;
+    color: rgb(255, 255, 255);
+    background-color:rgb(75, 73, 211);
     /*text-decoration: underline; */
+ }
+#popout{
+    color: rgb(255, 255, 255);
+    background-color:rgb(75, 73, 211);
+    /*text-decoration: underline; */
+ }
+ select{
+    color: rgb(255, 255, 255);
+    background-color:rgb(75, 73, 211);
+ }
+ #body{
+    color: rgb(255, 255, 255);
+    background-color:rgb(57, 55, 158);
  }
