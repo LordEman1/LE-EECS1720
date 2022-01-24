@@ -8,14 +8,19 @@
     <body>
         <div style="width:300px;" >
             <div>
-                <h1> Stuff</h1>
-                <p>stuff</p>
+                <h1> List</h1>
+                <p>Type in something and press Add to add it to the list.</p>
                 <ul></ul>
 
-            <input type="text" id="inputText">
+                <input type="text" id="inputText" placeholder="Enter Word" name="word" required>
+                <select id="mySelect">
+                    <option>Empty</option>
+                  </select>
             </div>
 
-        <button style="display:show;" class="openModel">Stuff</button>        
+            <ul></ul>
+            <button type="submit" id= "button">Add</button>
+            <input type="button" id= "button1" value="Remove">
         </div>
     </body>
 </html>
