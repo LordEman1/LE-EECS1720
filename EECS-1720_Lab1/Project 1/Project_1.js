@@ -4,11 +4,11 @@ window.onload = function () {
 }
 
 function changeText() {
-    word = document.getElementById("button");
-    word.options[word.selectedIndex].text = "word";
+    x = document.getElementById("mySelect");
+    x.options[x.selectedIndex].text = document.getElementById("inputText");
   }
 
 function removeOption() {
-    var word = document.getElementById("button1");
-    word.remove(word.selectedIndex);
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
 }

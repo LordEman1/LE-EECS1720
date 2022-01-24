@@ -6,5 +6,10 @@ h1{
  button{
     font-weight: bold;
     color: darkslategrey;
-    text-decoration: underline; 
+    /*text-decoration: underline; */
+ }
+input{
+    font-weight: bold;
+    color: darkslategrey;
+    /*text-decoration: underline; */
  }
