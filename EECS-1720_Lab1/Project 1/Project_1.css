@@ -2,7 +2,6 @@ h1{
     font-weight: bold;
     color: rgb(255, 255, 255);
     background-color:rgb(75, 73, 211);
-    text-decoration: underline; 
  }
  button{
     font-weight: bold;
@@ -24,8 +23,16 @@ input{
  select{
     color: rgb(255, 255, 255);
     background-color:rgb(75, 73, 211);
+    float: center;
  }
  #body{
     color: rgb(255, 255, 255);
     background-color:rgb(57, 55, 158);
+ }
+ img{
+    width:128px; 
+    height:128px; 
+    border:5px solid rgb(57, 55, 158);
+    vertical-align:middle;
+    margin:10px 10px;
  }
