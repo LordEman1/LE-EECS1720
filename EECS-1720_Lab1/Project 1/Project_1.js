@@ -1,6 +1,6 @@
-window.onclick = function () {
+/*window.onclick = function () {
     document.getElementById("button").onclick = changeText(generateName());
-}
+}*/
 
 function changeText(name) {
     x = document.getElementById("mySelect");
