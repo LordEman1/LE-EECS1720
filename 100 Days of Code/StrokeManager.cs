@@ -55,7 +55,7 @@ public class StrokeManager : MonoBehaviour
     //FixedUpdate should be used for manipulation
     void FixedUpdate()
     {
-        if(playerBallRB == null)
+        if (playerBallRB == null)
         {
             //Potetial Error? or something went wrong.
             return;
@@ -67,7 +67,7 @@ public class StrokeManager : MonoBehaviour
             Debug.Log("Hitting ball!");
 
             hitBall = false;
-             
+
             playerBallRB.AddForce(Quaternion.Euler(0, StrokeAngle, 0) * clubInHand, ForceMode.Impulse); //Hitting ball where pointing instantly
         }
     }
