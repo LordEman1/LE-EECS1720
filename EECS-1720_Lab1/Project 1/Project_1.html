@@ -2,25 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="Project_1.css">
-        <script src="Project_1.js"></script>
+        <link rel="stylesheet" type="text/css" href="Project_1.css">        
     </head>
     <body id= "body">
         <div id= "popout" style="width:300px;" >
-            <div>
-                <ul></ul>
-                
-                <select id="mySelect">
-                    <option>click me</option>
-                    <option>Color</option>
-                    <option>Text</option>
-                    <option>Image</option>
-                  </select>
 
-                  <button type="submit" id= "button" style="visibility: visible;">Activate</button>
-                  
-            </div>
+            <h2>Background Color</h2>
+            <input type="color" id="color-changer" />
+
+            <h2>Rotate Page</h2>
+            <input type="range" min="0" max="360" step="1" value="0" id="rotate" />
+
+            <h2>Rotate 3D</h2>
+            <input type="range" min="0" max="360" step="1" value="0" id="rotate3d">
+
 
         </div>
+        <script src="Project_1.js"></script>
     </body>
 </html>
