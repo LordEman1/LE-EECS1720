@@ -2,7 +2,7 @@
     "manifest_version": 3,
 
     "name": "Project 1",
-    "description": "project 1",
+    "description": "The Ability to Personalize Google",
     "version": "1.0",
     "permissions": [
         "scripting",
