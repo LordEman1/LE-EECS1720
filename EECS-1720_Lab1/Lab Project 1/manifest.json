@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+
+    "name": "Project 1",
+    "description": "The Ability to Personalize Google",
+    "version": "1.0",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "tabs"
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png"
+      },
+    "action": {
+        "default_icon": "icon16.png",
+        "default_popup": "Project_1.html"
+    }
+}

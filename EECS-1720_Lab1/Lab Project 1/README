@@ -1,0 +1,18 @@
+The Ability to Personalize Google
+  
+  NOTE: Only works on Google sites (For example): https://www.google.com/
+  
+  How to add extension:
+    1. Download the folder `Project 1` in: https://github.com/robots-make-art-too/Emmanuel_Sarmas
+    2. Go to chrome://extensions/ and check the box for Developer mode in the top right
+    3. Click the Load unpacked extension button and select the folder (`Project 1`) that you downloaded.
+    4. Now on your web browser click the top right Extensions button and find the extension.
+    5. Click the pin to the right of the extension for easy access.
+    6. Set up Done!
+    
+  How to operate:
+    1. Get yourself to a Google site (Preferrably https://www.google.com/)
+    2. Click the angry little face at the top right of your web browser to open the options
+    3. Click the button bellow the text "Background Color" and select your preferred color!
+    4. Move the slider bellow the text "Rotate Page" left or right to rotate the google page in a clockwise or counter clockwise motion!
+    5. Move the slider bellow the text "Rotate Page 3D" left or right to rotate the google page in a 3D motion!

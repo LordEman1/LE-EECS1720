@@ -1,2 +1,0 @@
-# LE-EECS1720
-LE/EECS1720 Codes
