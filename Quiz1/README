@@ -1,5 +1,0 @@
-What I did, How I did it, and How to Use it:
-
-In the index.html file i added an image and changed it asthetically in the style.css file.
-I made the sketch.js canvas fit the whole window by adding windowWidth and windowHeight to the create canvas peramiters.
-You can run it by just opening the index.html file on your browser and moving the mouse on the canvas bellow the angry image.
