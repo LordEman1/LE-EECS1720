@@ -18,6 +18,6 @@ public class StrokeAngleIndicator : MonoBehaviour
     void Update()
     {
         this.transform.position = playerBallTransform.position;
-        this.transform.rotation = Quaternion.Euler(0, StrokeManager.StrokeAngle, 0);
+        this.transform.rotation = Quaternion.Euler(StrokeManager.StrokeAngleX, StrokeManager.StrokeAngleY, 0);
     }
 }

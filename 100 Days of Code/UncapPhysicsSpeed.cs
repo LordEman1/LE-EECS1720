@@ -15,9 +15,10 @@ public class UncapPhysicsSpeed : MonoBehaviour
             return;
         }
 
-        rb.maxAngularVelocity = Mathf.Infinity; //Makes the Object roll without limits (More realistic rather than simulated)
+        //Makes the slowdown of Ball faster/slower
+        rb.sleepThreshold = 0.5f; // Default = 0.005 if needed
 
-        Destroy(this); //Destroys script when done
+        rb.maxAngularVelocity = Mathf.Infinity; //Makes the Object roll without limits (More realistic rather than simulated)
     }
 
     // Update is called once per frame

@@ -23,7 +23,8 @@ public class StrokeManager : MonoBehaviour
     public StrokeModeEnum StrokeMode{ get; protected set;}
 
     //Stroke Angle Indicator Stuff
-    public float StrokeAngle { get; protected set; }
+    public float StrokeAngleY { get; protected set; }
+    public float StrokeAngleX { get; protected set; }
 
     //Stroke Force Stuff
     public float StrokeForce { get; protected set; }
@@ -62,7 +63,19 @@ public class StrokeManager : MonoBehaviour
     {
         if (StrokeMode == StrokeModeEnum.AIMING) //Aim Mode
         {
-            StrokeAngle += Input.GetAxis("Horizontal") * 100f * Time.deltaTime; //Can Aim ball left(A) and right(D)
+            StrokeAngleY += Input.GetAxis("Horizontal") * 100f * Time.deltaTime; //Can Aim ball left(A) and right(D)
+            StrokeAngleX += -Input.GetAxis("Vertical") * 100f * Time.deltaTime; //Can Aim ball UP(W) and DOWN(S)
+
+            if (StrokeAngleX > 1) //Switch to Fill mode
+            {
+                StrokeAngleX = 0;
+                return;
+            }
+            if (StrokeAngleX < -26) //Switch to Fill mode
+            {
+                StrokeAngleX = -26;
+                return;
+            }
 
             if (Input.GetButtonUp("Fire1")) //Switch to Fill mode
             {
@@ -70,6 +83,14 @@ public class StrokeManager : MonoBehaviour
                 return;
             }
         }
+
+        if (Input.GetButtonUp("Cancel") && StrokeMode == StrokeModeEnum.FILL_BAR) //Switch Back to AIMING mode
+            {
+                StrokeMode = StrokeModeEnum.AIMING; //Fill mode Activated
+                StrokeForce = 0; //Set Bar to 0
+                fillDir = 1; //Make Bar go UP
+                return;
+            }
 
         if (StrokeMode == StrokeModeEnum.FILL_BAR) //Fill mode
         {
@@ -133,8 +154,10 @@ public class StrokeManager : MonoBehaviour
         Vector3 clubInHand = putter; //Club is use
 
 
-        playerBallRB.AddForce(Quaternion.Euler(0, StrokeAngle, 0) * clubInHand, ForceMode.Impulse); //Hitting ball where pointing instantly
-
+        playerBallRB.AddForce(Quaternion.Euler(StrokeAngleX, StrokeAngleY, 0) * clubInHand, ForceMode.Impulse); //Hitting ball where pointing instantly
+        
+        //Reset
+        StrokeAngleX = 0;
         StrokeForce = 0;
         StrokeMode = StrokeModeEnum.BALL_IS_MOVING; //After hit Ball CAN NOT be hit again until it STOPS
         
